@@ -9,8 +9,6 @@
 /test/chromedriver.exe
 
 # production
-/build
-/dist
 *.tgz
 
 # misc
