@@ -112,7 +112,7 @@ const ChatBotContainer = ({ flow }: { flow: Flow }) => {
 		window.addEventListener("keydown", handleFirstInteraction);
 		window.addEventListener("touchstart", handleFirstInteraction);
 
-		setUpNotifications();
+		!(botOptions.notification?.disabled) ?? setUpNotifications();
 		setTextAreaDisabled(botOptions.chatInput?.disabled as boolean);
 		setAudioToggledOn(botOptions.audio?.defaultToggledOn as boolean);
 		setVoiceToggledOn(botOptions.voice?.defaultToggledOn as boolean);
